@@ -9,6 +9,14 @@ body {
 body,html {
   height: 100%;
 }
+hr{
+    height: 2px;
+    width: 50%;
+    color: #404040;
+    background: #404040;
+    font-size: 0;
+    border: 0;
+}
 
 /*Home*/
 
@@ -16,12 +24,19 @@ body,html {
   width:100%;
   height:100%;
   height:calc(100% - 1px);
-  background-image:url('https://c.stocksy.com/a/RcN300/z0/805779.jpg');
+  background-image: url(../img/Background_Home.jpg);
   background-size:cover;
   background-position:center;
   position: relative;
+    min-height: 600px;
 }
 .logo {
+ 	position: absolute;
+	width: 100%;
+	top: 30%;
+	left: 0;
+}
+.logo .img-responsive {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -36,9 +51,8 @@ body,html {
     margin-top: -100px;
 }
 .navbar-default a{
-    border: 2px solid #006cff;
-    margin: 5px;
-    color: aqua;
+    border: 2px solid #fff;
+    margin: 5px; 
 }
 .navbar-toggle {
 
@@ -47,13 +61,42 @@ body,html {
 /*About me*/
 #aboutMe {
     text-align: center;
+    padding-bottom: 50px;
 }
 #aboutMe h2 {
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+}
+#aboutMe .information {
+    margin-bottom: 50px;
 }
 #aboutMe .iKnow {
-
     border: 1px solid black;
+    border-radius: 5px;
+}
+#aboutMe .iKnow i {
+    margin-top: 30px;
+}
+#aboutMe .iKnow h3 {
+    
+}
+#aboutMe .iKnow p {
+    
+}
+
+/*Image gallery*/
+/*Media*/
+
+@media (max-width: 992px) {
+#aboutMe .iKnow {
+    margin: 20px;
+}
+
+}
+@media (max-width: 768px) {
+.logo .img-responsive {
+   padding-left: 20px;
+   padding-right: 20px;
+}
 
 }
