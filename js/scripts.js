@@ -6,12 +6,16 @@
 
 
 //navigation
-var num = $(window).height();
+
+var num = $(window).height() -100;
+
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
-        $('.navigation').addClass('navbar-fixed-top');
+        $('.navbar-default').addClass('navbar-fixed-top');
+        $('.navbar-default').removeClass('navbar-sticky');
     } else {
-        $('.navigation').removeClass('navbar-fixed-top');
+        $('.navbar-default').removeClass('navbar-fixed-top');
+        $('.navbar-default').addClass('navbar-sticky');
     }
 });
 

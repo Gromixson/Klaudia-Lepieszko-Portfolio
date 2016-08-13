@@ -29,9 +29,11 @@ body,html {
 
 /*Navigation*/
 .navbar-default{
-    margin-top: -100px;
     background: none;
     border: none;
+}
+.navbar-sticky{
+    margin-top: -100px;
 }
 .navbar-default a{
     border: 2px solid #006cff;
@@ -39,5 +41,19 @@ body,html {
     color: aqua;
 }
 .navbar-toggle {
+
+}
+
+/*About me*/
+#aboutMe {
+    text-align: center;
+}
+#aboutMe h2 {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+#aboutMe .iKnow {
+
+    border: 1px solid black;
 
 }
