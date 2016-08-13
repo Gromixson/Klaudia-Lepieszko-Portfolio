@@ -5,254 +5,39 @@ body {
 	color: #666;
 	overflow-x: hidden;
 }
-hr{
-    height: 2px;
-    width: 50%;
-    color: #0089d1;
-    background: #0089d1;
-    font-size: 0;
-    border: 0;
-}
-h2{
-    font-size: 50px;
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 20px;
+
+body,html {
+  height: 100%;
 }
 
-/*Welcome*/
+/*Home*/
 
-.welcome {
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	left: 0;
-	text-align: center;
-	-webkit-transform: translate(0%, -50%);
-	   -moz-transform: translate(0%, -50%);
-		-ms-transform: translate(0%, -50%);
-		 -o-transform: translate(0%, -50%);
-			transform: translate(0%, -50%);
-	padding: 0 15px;
-    z-index: 99;
-    color: #2c4d65;
-    background-color: rgba(255, 255, 255, 0.26);
-    padding-bottom: 15px;
+#home {
+  width:100%;
+  height:100%;
+  height:calc(100% - 1px);
+  background-image:url('https://c.stocksy.com/a/RcN300/z0/805779.jpg');
+  background-size:cover;
+  background-position:center;
+  position: relative;
 }
-
-.welcome h1{
-    font-size: 3.5em;
-    font-weight: 800;
-}
-.myname {
-	font-family: 'Raleway', "Times New Roman", sans-serif;
-	font-size: 2em;
-	font-style: normal;
-	text-transform: none;
-	margin: 15px 0;
-    font-weight: 500;
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Navigation*/
+.navbar-default{
+    margin-top: -100px;
+    background: none;
+    border: none;
+}
+.navbar-default a{
+    border: 2px solid #006cff;
+    margin: 5px;
+    color: aqua;
+}
+.navbar-toggle {
 
-.header {
-	border-bottom: 1px solid #f5f5f5;
-	position: relative;
-	width: 100%;
-	z-index: 998;
-}
-.navbar-custom {
-	border: 0;
-	border-radius: 0;
-	margin: 0;
-	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
-}
-.navbar-custom,
-.navbar-custom .dropdown-menu {
-	background: #fff;
-	padding: 0;
-}
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav > li > a,
-.navbar-custom .navbar-nav .dropdown-menu > li > a {
-	font-size: 12px;
-    font-weight: 600;
-	letter-spacing: 3px;
-	color: #222;
-}
-.navbar-custom .nav li.active,
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .navbar-nav > li.active a {
-	background: none;
-	outline: 0;
-	color: #0089d1;
-}
-.navbar-custom .navbar-brand {
-	font-weight: 700;
-	font-size: 22px;
-    color: #2c4d65;
-}
-.navbar-custom .dropdown-menu {
-	border: 0;
-	border-top: 2px solid #0089d1;
-	border-radius: 0;
-}
-.navbar-custom .dropdown-menu > li > a {
-	padding: 10px 20px;
-}
-.navbar-custom .nav .open > a,
-.navbar-custom .dropdown-menu > li > a:hover,
-.navbar-custom .dropdown-menu > li > a:focus {
-	background: #f5f5f5;
-}
-.navbar-custom .navbar-toggle .icon-bar {
-	background: #222;
-}
-
-/*About Me*/
-#aboutme{
-    background-color: rgba(44, 77, 101, 0.17);
-    padding-top: 30px;
-    padding-bottom: 40px;
-}
-.about {
-    text-align: center;
-}
-.glyphicon {
-    margin-top: 80px;
-    font-size: 2em;
-}
-.about p {
-    font-size: 2em;
-}
-
-/*Projects*/
-#projects {
-    padding-bottom: 90px;
-}
-#projects img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.hovereffect {
-    margin-top: 30px;
-}
-.hovereffect a {
-    font-weight: bold;
-}
-
-/*My Skills*/
-
-#skills {
-    background: url(../img/skills-background1.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-    padding-top: 10px;
-    padding-bottom: 40px;
-    text-align: center;
-}
-#skills img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#skills .skill {
-   margin-top: 30px; 
-}
-#skills .skill p {
-    font-size: 25px;
-}
-#skills .skill hr {
-    width: 70%;
-}
-
-/*GitHub*/
-
-#github{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#github p {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 30px;
-}
-#github .git-icon {
-    cursor: pointer;
-    margin: 0 auto;
-}
-#github .my-github{
-    max-width: 400px;
-}
-
-/*Contact*/
-#contact{
-    text-align: center;
-    background: url(../img/contact-background.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-    height: 900px;
-}
-#contact .contact-way{
-    margin-top: 90px;
-}
-#contact .glyphicon {
-    font-size: 40px;
-}
-#contact p {
-    font-size: 1.5em;
-}
-#contact a {
-    text-decoration: none;
-    color: black;
-}
-
-/*Footer*/
-
-#footer {
-	background: #222;
-	text-align: center;
-	padding: 40px 0;
-	color: #FFF;
-}
-#footer p {
-    margin-top: 10px;
-}
-
-/*Media*/
-
-@media (max-width: 992px) {
-
-	.navbar-custom .navbar-brand {
-    letter-spacing: 1px;
-    font-size: 1em;
-	}
-    .glyphicon {
-    margin-top: 65px;
-    font-size: 2em;
-}
-    .hovereffect a {
-    font-size: 12px;
-}
-    #contact .contact-way{
-    margin-top: 20px;
-}
-}
-@media (max-width: 768px) {
-.video-container .welcome {
-    font-size: 0.8em;
-    z-index: 2;
-    position: absolute;
-    background: rgba(255, 255, 255, 0.33);
-    width: 100%;
-}
 }
