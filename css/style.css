@@ -24,11 +24,11 @@ hr{
   width:100%;
   height:100%;
   height:calc(100% - 1px);
-  background-image: url(../img/Background_Home.jpg);
-  background-size:cover;
+  background: url(../img/Background_Home.jpg) no-repeat center center fixed ;
+  background-size: cover;
   background-position:center;
   position: relative;
-    min-height: 600px;
+    min-height: 900px;
 }
 .logo {
  	position: absolute;
@@ -46,16 +46,27 @@ hr{
 .navbar-default{
     background: none;
     border: none;
+    width: 100%;
 }
 .navbar-sticky{
-    margin-top: -100px;
+    margin-top: -150px;    
 }
-.navbar-default a{
-    border: 2px solid #fff;
-    margin: 5px; 
+.navbar-nav a{
+    border: 1px solid #fff;
+    margin-left: -2px;
+    min-width: 140px;
+    text-align: center;
 }
-.navbar-toggle {
-
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
 /*About me*/
