@@ -7,7 +7,7 @@
 
 //navigation
 
-var num = $(window).height() -100;
+var num = $(window).height() -50;
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {

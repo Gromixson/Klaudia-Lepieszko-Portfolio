@@ -23,33 +23,34 @@ hr{
 #home {
   width:100%;
   height:100%;
-  height:calc(100% - 1px);
   background: url(../img/Background_Home.jpg) no-repeat center center fixed ;
   background-size: cover;
   background-position:center;
   position: relative;
-    min-height: 900px;
+/*  min-height: 700px;*/
 }
-.logo {
- 	position: absolute;
+.logo{
+    position: absolute;
 	width: 100%;
-	top: 30%;
-	left: 0;
+	top: 50%;
+	-webkit-transform: translate(0%, -50%);
+	   -moz-transform: translate(0%, -50%);
+		-ms-transform: translate(0%, -50%);
+		 -o-transform: translate(0%, -50%);
+			transform: translate(0%, -50%);
 }
 .logo .img-responsive {
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
 }
-
 /*Navigation*/
 .navbar-default{
     background: none;
     border: none;
     width: 100%;
-}
-.navbar-sticky{
-    margin-top: -150px;    
+    position: absolute;
+    bottom: 1px;
 }
 .navbar-nav a{
     border: 1px solid #fff;
@@ -63,12 +64,17 @@ hr{
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
-  vertical-align: top;
 }
 .navbar .navbar-collapse {
   text-align: center;
 }
-
+.navbar-toggle{
+    color: aquamarine;
+    background-color: aquamarine
+}
+.navbar-fixed-top{
+    position:fixed;
+}
 /*About me*/
 #aboutMe {
     text-align: center;
