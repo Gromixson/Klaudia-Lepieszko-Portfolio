@@ -1,12 +1,25 @@
 @charset "utf-8"; 
 @font-face {
-      font-family: "Bebas Neue Regular";
+      font-family: "Bebas Neue Light";
       src: url("../fonts/bebas_neue/BebasNeueLight.otf")
+    }
+@font-face {
+      font-family: "Aleo regular";
+      src: url("../fonts/aleo/Aleo-Regular.otf")
+    }
+@font-face {
+      font-family: "Aleo light italic";
+      src: url("../fonts/aleo/Aleo-LightItalic.otf")
+    }
+@font-face {
+      font-family: "Aleo light";
+      src: url("../fonts/aleo/Aleo-Light.otf")
     }
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
 	color: #666;
 	overflow-x: hidden;
+    background: url(../img/background.png)
 }
 
 body,html {
@@ -26,7 +39,7 @@ hr{
 #home {
   width:100%;
   height:100%;
-  background: url(../img/Background_Home.jpg) no-repeat center center fixed ;
+  background: url(../img/background_Home.jpg) no-repeat center center fixed ;
   background-size: cover;
   background-position:center;
   position: relative;
@@ -58,8 +71,8 @@ hr{
     border: 1px solid #fff;
     min-width: 130px;
     text-align: center;
-    font-family: 'Bebas Neue Regular', sans-serif;
-    letter-spacing: 2px;
+    font-family: 'Bebas Neue Light', sans-serif;
+    letter-spacing: 3px;
     font-size: 16px;
 }
 .navbar-default .navbar-nav > li > a {
@@ -83,11 +96,15 @@ hr{
     background-color: #ffffff;    
 }
 .navbar-fixed-top{
-    position:fixed;
+    position: fixed;
+
 }
 .navbar-toggle {
     border-radius: 0px;
     border: #6c6c6c 1px solid !important;
+}
+.nav {
+transition-duration: 2s;
 }
 /*About me*/
 #aboutMe {
@@ -96,24 +113,28 @@ hr{
 }
 #aboutMe h2 {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    font-family: "Aleo regular", sans-serif;
+    font-size: 3.5em;
+    color: #412e2e;
+    margin-right: 8px;
 }
-#aboutMe .information {
-    margin-bottom: 50px;
+#aboutMe p{
+    font-family: "Aleo light italic", sans-serif;
+    font-size: 1.5em;
+    color: #898989;
 }
-#aboutMe .iKnow {
-    border: 1px solid black;
-    border-radius: 5px;
+#aboutMe .information{
+    font-family: "Aleo light", sans-serif;
+    margin-top: 150px;
 }
-#aboutMe .iKnow i {
-    margin-top: 30px;
+#aboutMe hr {
+    width: 80px;
+    color: #5d5d5d;
+    background: #5d5d5d;
+    margin-top: 0px;
 }
-#aboutMe .iKnow h3 {
-    
-}
-#aboutMe .iKnow p {
-    
-}
+
 
 /*Image gallery*/
 /*Media*/
@@ -122,7 +143,9 @@ hr{
 #aboutMe .iKnow {
     margin: 20px;
 }
-
+#aboutMe .information{
+    margin-top: 20px;
+}
 }
 @media (max-width: 768px) {
 .logo .img-responsive {
@@ -132,6 +155,21 @@ hr{
     #home{
         height: 100%;
     }
+    .navbar-nav a{
+    border: none;
+    min-width: 0px;
+/*    text-align: left;*/
+    font-family: 'Aleo regular', sans-serif;
+        letter-spacing: 0px;
 }
-
+    .navbar .navbar-nav {
+    width: 100%;
+    float: left;
+}
+    .navbar-default .navbar-nav > li > a {
+    color: #000000;
+}
+    .navbar-collapse{
+            background: rgba(255, 255, 255, 0.85);   
+    }
 }
