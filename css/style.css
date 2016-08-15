@@ -1,5 +1,8 @@
 @charset "utf-8"; 
-
+@font-face {
+      font-family: "Bebas Neue Regular";
+      src: url("../fonts/bebas_neue/BebasNeueLight.otf")
+    }
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
 	color: #666;
@@ -27,15 +30,14 @@ hr{
   background-size: cover;
   background-position:center;
   position: relative;
-/*  min-height: 700px;*/
 }
 .logo{
     position: absolute;
 	width: 100%;
-	top: 50%;
+	top: 13%;
 	-webkit-transform: translate(0%, -50%);
 	   -moz-transform: translate(0%, -50%);
-		-ms-transform: translate(0%, -50%);
+		-ms-transform: translate(0%, -50%); 
 		 -o-transform: translate(0%, -50%);
 			transform: translate(0%, -50%);
 }
@@ -50,30 +52,42 @@ hr{
     border: none;
     width: 100%;
     position: absolute;
-    bottom: 1px;
+    bottom: 30px;
 }
 .navbar-nav a{
     border: 1px solid #fff;
-    margin-left: -2px;
-    min-width: 140px;
+    min-width: 130px;
     text-align: center;
+    font-family: 'Bebas Neue Regular', sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
 }
 .navbar-default .navbar-nav > li > a {
     color: #ffffff;
 }
 .navbar .navbar-nav {
-  display: inline-block;
-  float: none;
+    display: inline-block;
+    float: none;
 }
 .navbar .navbar-collapse {
-  text-align: center;
+    text-align: center;
 }
-.navbar-toggle{
-    color: aquamarine;
-    background-color: aquamarine
+.icon-bar{
+    color: #000000;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #6c6c6c;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #ffffff;    
 }
 .navbar-fixed-top{
     position:fixed;
+}
+.navbar-toggle {
+    border-radius: 0px;
+    border: #6c6c6c 1px solid !important;
 }
 /*About me*/
 #aboutMe {
@@ -114,6 +128,10 @@ hr{
 .logo .img-responsive {
    padding-left: 20px;
    padding-right: 20px;
+    }
+    #home{
+        height: 100%;
+    }
 }
 
 }
