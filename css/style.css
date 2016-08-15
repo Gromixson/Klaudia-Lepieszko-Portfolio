@@ -43,11 +43,12 @@ hr{
   background-size: cover;
   background-position:center;
   position: relative;
+  min-height: 300px;
 }
 .logo{
     position: absolute;
 	width: 100%;
-	top: 13%;
+	top: 100px;
 	-webkit-transform: translate(0%, -50%);
 	   -moz-transform: translate(0%, -50%);
 		-ms-transform: translate(0%, -50%); 
@@ -67,10 +68,9 @@ hr{
     position: absolute;
     bottom: 30px;
 }
-.navbar-nav a{
+.navbar-nav a {
     border: 1px solid #fff;
     min-width: 130px;
-    text-align: center;
     font-family: 'Bebas Neue Light', sans-serif;
     letter-spacing: 3px;
     font-size: 16px;
@@ -91,8 +91,8 @@ hr{
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #6c6c6c;
 }
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.navbar-nav a:hover,
+.navbar-nav a:focus {
     background-color: #ffffff;    
 }
 .navbar-fixed-top{
@@ -105,6 +105,9 @@ hr{
 }
 .nav {
 transition-duration: 2s;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border: none;
 }
 /*About me*/
 #aboutMe {
@@ -158,18 +161,16 @@ transition-duration: 2s;
     .navbar-nav a{
     border: none;
     min-width: 0px;
-/*    text-align: left;*/
-    font-family: 'Aleo regular', sans-serif;
-        letter-spacing: 0px;
+    font-family: 'Aleo light', sans-serif;
+    letter-spacing: 0px;
 }
     .navbar .navbar-nav {
     width: 100%;
-    float: left;
-}
-    .navbar-default .navbar-nav > li > a {
-    color: #000000;
 }
     .navbar-collapse{
-            background: rgba(255, 255, 255, 0.85);   
+    background:  rgba(65, 46, 46,0.8) ; 
     }
+    .navbar-default .navbar-nav > li > a {
+    margin-right: -30px;
+}
 }
