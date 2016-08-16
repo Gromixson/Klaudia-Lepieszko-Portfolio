@@ -27,9 +27,9 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $('.navbar-collapse').css('background-color', 'rgba(65, 46, 46,0.8)'); 
+          $('.navbar .navbar-nav').css('background-color', 'rgba(65, 46, 46,0.8)'); 
        } else {
-          $('.navbar-collapse').css('background-color', 'transparent');
+          $('.navbar .navbar-nav').css('background-color', 'transparent');
        }
    });
 });
