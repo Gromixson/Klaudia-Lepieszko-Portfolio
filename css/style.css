@@ -48,7 +48,7 @@ hr{
 .logo{
     position: absolute;
 	width: 100%;
-	bottom: 15%;
+	bottom: 8%;
 	-webkit-transform: translate(0%, -50%);
 	   -moz-transform: translate(0%, -50%);
 		-ms-transform: translate(0%, -50%); 
@@ -99,7 +99,7 @@ hr{
 }
 .navbar-fixed-top{
     position: fixed;
-
+    max-height: 80px;
 }
 .navbar-toggle {
     border-radius: 0px;
@@ -111,7 +111,13 @@ transition-duration: 2s;
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
     border: none;
 }
-
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background: none;
+}
+    
 /*About me*/
 
 #aboutMe {
@@ -144,6 +150,19 @@ transition-duration: 2s;
 
 
 /*Image gallery*/
+#portfolio {
+    padding-top: 50px;
+    background: rgba(0, 0, 0, 0.55);
+}
+#portfolio h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: "Aleo regular", sans-serif;
+    font-size: 3.5em;
+    color: #412e2e;
+    margin-right: 8px;
+
 /*Media*/
 
 @media (max-width: 992px) {
@@ -178,3 +197,4 @@ transition-duration: 2s;
     margin-right: -30px;
 }
 }
+
