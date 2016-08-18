@@ -51,3 +51,4 @@ $(function() {
 });
 
 //gallery
+var gallery = $('.gallery a').simpleLightbox();
