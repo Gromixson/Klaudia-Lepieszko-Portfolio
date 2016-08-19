@@ -52,3 +52,5 @@ $(function() {
 
 //gallery
 var gallery = $('.gallery a').simpleLightbox();
+
+// load more
