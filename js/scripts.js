@@ -1,3 +1,21 @@
+//preloader
+$("body").lsPreloader({
+backgroundColor: "#ffffff", 
+backgroundImage: "",   
+backgroundRepeat: "repeat",     
+logoImage: "",   
+progressShow: true, 
+progressColor: "#98726c",
+progressHeight: "3px", 
+progressPosition: "center", 
+percentShow: true,      
+percentFontFamily: "Verdana, Geneva, sans-serif", 
+percentFontSize: "20px",  
+animationComplete: "fade",
+minimumTime: .5,          
+});
+
+
 //wow animations
   	wow = new WOW({
 			mobile: false
